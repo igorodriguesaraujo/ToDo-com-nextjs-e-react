@@ -1,0 +1,52 @@
+.toDoContainer {
+    width:90%;
+    max-width:500px;
+    margin: 5% auto;
+    border:1px solid var(--blue-darkness);
+    background:var(--blue-dark);
+}
+
+.toDoContainer header {
+    display: flex;
+    border-bottom:1px solid var(--blue-darkness);
+    border-bottom: 1rem solid var(--blue-darkness);
+}
+.toDoContainer header button {
+    padding:.75rem;
+    background: var(--green);
+    color:var(--gray-light);
+}
+.toDoContainer header input[type=text] {
+    flex:1;
+    padding:1.5rem;
+
+    border:0 none;
+    color:var(--blue);
+
+    outline:none;
+}
+
+.toDoContainer header input[type=text],
+.toDoContainer header input[type=text]::placeholder {
+    font-size:1rem;
+}
+.notFound {
+    font-size:1rem;
+    font-weight:600;
+    text-align: center;
+    color:var(--gray-light);
+}
+.notFound span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: .5rem;
+
+    font-size: .75rem;
+    font-weight: 600;
+    line-height: 20px;
+
+    border:2px solid var(--red);
+    border-radius:25px;
+    color:var(--red);
+}

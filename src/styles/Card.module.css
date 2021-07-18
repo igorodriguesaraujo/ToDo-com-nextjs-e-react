@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    justify-content: space-between;
+    border-bottom:1px solid var(--blue-darkness);
+}
+.card:last-child {
+    border-bottom:0 none;
+}
+.card * {
+    flex:1;
+}
+.card span {
+    padding:1rem;
+    color:var(--gray-light);
+    border-left:8px solid var(--blue-dark);
+}
+.card button {
+    display: block;
+    max-width: 80px;
+    
+    border: 0 none;
+    border-left:1px solid var(--blue-darkness);
+    background: transparent;
+    color: var(--gray-light);
+    
+    cursor: pointer;
+}
+.card button.active {
+    background: var(--green);
+    color: var(--blue);
+    border-color: var(--green);
+}
+.card span.active {
+    border-left-color:var(--green);
+}
+.card .btnRemove {
+    background: var(--red);
+}
